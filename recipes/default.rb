@@ -32,6 +32,17 @@ end
 package 'dbus-x11'
 package 'firefox'
 
+
+# ----------------------------------------------------------------------------
+# Install sqlite3
+# ----------------------------------------------------------------------------
+
+# This is useful for troubleshooting Chromium configuration issues
+# for example, to see what logins are memorized in Chromium:
+#     echo 'select * from logins;' | sqlite3 ~/.config/chromium/Default/Login\ Data
+package 'sqlite3'
+
+
 # ----------------------------------------------------------------------------
 # Install Chromium and Chromedriver.
 # ----------------------------------------------------------------------------
